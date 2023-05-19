@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*
+{
+    margin: 0;
+    padding:0 ;
+}
+/* Variables */
+:root{
+    --orange:hsl(31, 77%, 52%);
+    --cyan:hsl(184, 100%, 22%);
+    --darkcyan:hsl(179, 100%, 13%);
+
+    /* Fonts */
+    --shoulder:'Big Shoulders Display', cursive;
+    --lexend:'Lexend Deca', sans-serif;
+
+    /* text colour */
+    --lightgrey:hsl(0, 0%, 95%);
+    --white: hsla(0, 0%, 100%, 0.75);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--white);
+}
+.container
+{
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    width:960px ;
+    height: 490px;
+}
+.common
+{
+    width: 320px;
+    height: 500px;
+    padding: 40px 70px 10px 40px;
+    color: white;
+}
+.card-1
+{
+    background-color: var(--orange);
+    
+}
+.common h1
+{
+    font-family: var(--shoulder);
+    color: var(--lightgrey);
+    margin-top: 30px;
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+.common p
+{
+    font-family: var(--lexend);
+    color: var(--white);
+    line-height: 25px;
+    margin-bottom: 80px;
+    font-weight: 400;
+}
+.card-2
+{
+    background-color: var(--cyan);
+}
+.card-3
+{
+    background-color: var(--darkcyan);
+}
+button
+{
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-family: var(--lexend);
+    border: none;
+    font-weight: 400;
+}
+.sedan
+{
+    color: var(--orange);
+}
+.suvs
+{
+    color: var(--cyan);
+}
+.luxury
+{
+    color: var(--darkcyan);
+}
+.sedan:hover
+{
+    background-color: var(--orange);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+.suvs:hover
+{
+    background-color:var(--cyan);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+.luxury:hover
+{
+    background-color: var(--darkcyan);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:450px){
+   
+    .contain{
+        padding-top: 800px;
+        padding-bottom: 50px;
+    }
+    .container{
+        /* margin-top: 50px; */
+        flex-direction: column;
+        width: 320px;
+        height: 1320px;
+    }
+    .common
+    {
+        padding: 0;
+        width: 320px;
+        height: 440px;
+        padding:40px 10px 10px 40px;
+    }
+    .text
+    {
+        padding-right: 20px;
+    }
+    .card-3>.text{
+        padding-right: 30px;
+    }
+    .common h1
+    {
+        margin-bottom: 25px;
+    }
+    .common p{
+        margin-right: 55px;
+        margin-bottom: 30px;
+    }
+}
